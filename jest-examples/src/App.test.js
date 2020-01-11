@@ -31,8 +31,8 @@ test('integrateAdd', () => {
 });
 
 //Mocking add
-const add2 = jest.fn(() => 3);
+const mockAdd = jest.fn(() => 3);
 
 test('mockingAdd', () => {
-    expect(add2(2,2)).toBe(3);
+    expect(mockAdd(2,2)).toBe(3);
 });
